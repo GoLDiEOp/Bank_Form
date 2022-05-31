@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="PaymentForm.css">
+  </head>
+  <body>
+    <div class="container">
+    <form action="">
+      <h1 class="main_heading">Form</h1>
+      <hr>
+      <fieldset>
+        <legend>Personal Information</legend>
+        <h2>Contact Information</h2>
+        <p>Name *: <input type="text" name="name" id="name" placeholder="Full Name" required></p>
+        <fieldset>
+          <Legend> Gender </Legend> 
+          <p>Male<input type="radio" name="gender" id="male" required>&nbsp;&nbsp;    Female<input type="radio" name="gender" id="female" required></p>
+        </fieldset>
+        <p>Address *: <textarea type="text" name="address" id="address" cols="100" rows="8" required></textarea></p>
+        <p>Pincode *: <input type="number" name="pincode" id="pincode"></p>
+        <p>Email *: <input type="email" name="email" id="email" required></p>  
+        <p>Phone Number *: <input type="number" name="phone" id="phone" required></p> 
+      </fieldset> 
+      <fieldset>
+        <legend>
+            Payment Details
+        </legend>
+        <p>
+            Card Type *:
+            <select name="card_type" id="card_type" required>
+                <option value="">--Select a Card Type--</option>
+                <option value="Visa">Visa</option>
+                <option value="Rupee">Rupee</option>
+                <option value="MatserCard">MasterCard</option>
+            </select>
+       &nbsp;&nbsp;
+          Card Number *: <input type="number" name="card_number" id="card_number" required>
+      </p>
+      <p>
+        Expiration Date *: <input type="date" name="exp_date" id="exp_date" required>
+    </p>
+    <p>
+        CVV *: <input type="password" name="cvv" id="cvv" required>
+    </p>
+    <input type="submit" value="Pay Now" required>
+    </fieldset>
+
+    </form>
+  </div>
+  </body>
+
+</html>
